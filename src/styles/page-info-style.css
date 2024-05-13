@@ -1,3 +1,80 @@
-body {
-  background-color: #F0EEDB;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+:root {
+  --index: calc(1vw+1vh);
+  --color-header-text: #c22727;
+  --color-header-adress: #290b0b;
+  --color-header-number: #2f0a0a;
+  --color-discription-gento: #b51b1b;
+  --color-basic: #000000;
+  --color-footer: #b04a4a;
+  --color-footer-lands: #c22727;
+}
+@font-face {
+  font-family: PT Mono-c;
+  src: url(../../public/fonts/PTMono.ttc) format("truetype");
+}
+@font-face {
+  font-family: Gento-c;
+  src: url(../../public/fonts/GENTO\ DREAM.ttf);
+}
+body {
+  background-color: #f0eedb;
+  font-family: PT Mono-c;
+  /* overflow: hidden; */
+}
+
+.basic-font-header{
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content_1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo_header {
+  width: calc(var(--index));
+  height: 193.32px;
+  width: 284.9px;
+
+}
+.madame_roche {
+
+  width: calc(var(--index));
+  height: 624.09px;
+  width: 737.23px;
+  transform: rotate(-5deg);
+}
+.content_2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content_3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content_4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content_5{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
