@@ -10,9 +10,9 @@
   --color-header-adress: #290b0b;
   --color-header-number: #2f0a0a;
   --color-discription-gento: #b51b1b;
-  --color-basic: #000000;
-  --color-footer: #b04a4a;
-  --color-footer-lands: #c22727;
+  --color-basic-discription: #000000;
+  --color-footer-discription: #b04a4a;
+  --color-footer-landings: #c22727;
 }
 @font-face {
   font-family: PT Mono-c;
@@ -20,61 +20,170 @@
 }
 @font-face {
   font-family: Gento-c;
-  src: url(../../public/fonts/GENTO\ DREAM.ttf);
+  src: url(../../public/fonts/GENTO\ DREAM.ttf) format("truetype");
 }
+
 body {
   background-color: #f0eedb;
   font-family: PT Mono-c;
-  /* overflow: hidden; */
+}
+.carcass-parameters {
+  width: 90%;
+  /* height: 100%; */
+  padding: 0;
+  margin: 0 auto;
+  /* display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 10px; */
 }
 
-.basic-font-header{
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.content_1{
+header {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+
   justify-content: center;
   align-items: center;
 }
-.logo_header {
-  width: calc(var(--index));
-  height: 193.32px;
-  width: 284.9px;
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.middle-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23.2vh;
+  margin-left: 88vh;
+}
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.header-discription {
+  text-align: center;
+  color: var(--color-header-text);
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.033em;
+  padding-bottom: 22.5vh;
+  margin-top: 4vh;
+  margin-left: 42%;
+  white-space: nowrap;
+
 
 }
-.madame_roche {
+.adress {
+  font-size: 14px;
+  color: var(--color-header-adress);
+}
+.number {
+  font-size: 14px;
+  color: var(--color-header-number);
 
-  width: calc(var(--index));
-  height: 624.09px;
-  width: 737.23px;
+}
+.logo-header {
+  padding-top: 12%;
+  padding-left: 70%;
+}
+.madame-roche {
+  position: relative;
+  margin-top: 38vh;
+  left: 65vh;
   transform: rotate(-5deg);
 }
-.content_2{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.content_3{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.content_4{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.content_5{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+.gento-dream-discription {
+  font-family: Gento-c;
+  font-size: 100px;
+  font-weight: lighter;
+  line-height: 1.3;
+  letter-spacing: 0.023em;
+  color: #a83232;
+  text-align: center;
+  position: relative; /* Добавляем позиционирование */
+  z-index: 1; /* Задаем высокий z-index для текста, чтобы он отображался поверх .hieroglyph */
+  margin-top: 20vh;
+  margin-left: 90vh;
+  white-space: nowrap;
+
+
 }
 
+.hieroglyph {
+  position:absolute;
+  left: 70.8%;
+  top: 262vh;
+  
+
+}
+.asian-woman-and-watermark {
+  margin-top: 25.5%;
+  margin-left: 4%;
+  padding-bottom: 12%;
+}
+.group-of-woman {
+  margin-top: 32.6vh;
+  margin-left: 68%;
+}
+.logo-footer {
+}
+.landings a {
+  color: var(--color-footer-landings);
+}
+
+.main-discription,
+.footer-discription {
+  text-align: center;
+  color: var(--color-basic-discription);
+  padding: 12px;
+  font-size: 18px;
+  font-family: PT Mono-c;
+  line-height: 1.48;
+  transform: scaleY(1, 9);
+}
+.footer-discription {
+  color: var(--color-footer-discription);
+}
